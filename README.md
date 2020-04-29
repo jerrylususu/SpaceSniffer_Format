@@ -1,10 +1,12 @@
 # SpaceSniffer 二进制快照文件格式解析
 
 官方网站：[http://www.uderzo.it/main_products/space_sniffer/](http://www.uderzo.it/main_products/space_sniffer/)
+
 后缀名：`.sns`
 
 ## 文件格式描述
 
+```
 数字编码：little-endian
 日期格式：MS File Dates (LDAP Timestamp, 可用此网站转换：https://www.epochconverter.com/ldap)
 文件顺序：字典序（暂不确定如果不依照字典序是否会有影响）
@@ -26,6 +28,7 @@
 [date3, 16byte]
 [当前项结束标志 0000]
 [返回上层 0100]
+```
 
 ## TODO
 - [ ] 英文文档
