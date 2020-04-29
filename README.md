@@ -30,7 +30,32 @@
 [返回上层 0100]
 ```
 
+
+
+## 示例文件夹架构
+
+示例文件：example.sns
+
+```
+jerrylu@JERRYLU-DELL:/mnt/c/sns_example$ tree --du
+.
+├── [          4]  a.txt
+├── [          8]  abc.txt
+├── [        512]  folder1
+│   └── [          0]  a.txt
+├── [       1137]  folder2
+│   ├── [         26]  b.txt
+│   └── [        599]  folder3
+│       └── [         87]  d.txt
+└── [         13]  z.txt
+
+        2186 bytes used in 3 directories, 6 files
+```
+
+
+
 ## TODO
+
 - [ ] 英文文档
 - [ ] 上传示例文件 + 图片说明
 - [ ] decoder
